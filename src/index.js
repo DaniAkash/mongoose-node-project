@@ -8,6 +8,8 @@ http
   })
   .listen(8080); //the server object listens on port 8080
 
+require("./queries/authorQueries");
+
 /**
  * Book
  */

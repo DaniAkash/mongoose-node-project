@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const { Schema } = mongoose;
+const { Schema, model } = mongoose;
 
 const AuthorSchema = new Schema({
   first_name: {
@@ -18,3 +18,7 @@ const AuthorSchema = new Schema({
   date_of_birth: Date,
   date_of_death: Date,
 });
+
+const Author = model("Author", AuthorSchema);
+
+module.exports = Author;
