@@ -1,3 +1,4 @@
+require("./config/mongodb");
 var http = require("http");
 
 //create a server object:
@@ -9,6 +10,7 @@ http
   .listen(8080); //the server object listens on port 8080
 
 require("./queries/authorQueries");
+require("./queries/bookQueries");
 
 /**
  * Book
